@@ -1,3 +1,27 @@
-img {
+img.circle {
     border-radius: 50%;
+  }
+  .header-primary {
+    font-size: 2rem;
+    color: green;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .header-secondary {
+    font-size: 1rem;
+    color: #f49a00;
+  }
+
+  .height-font {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:saddlebrown;
+  }
+  .course-font {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #aboutme-header {
+    background-color: #cacaca;
+    padding: 0.5rem;
   }
