@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+}
+
+a {
+    color: #A4A400;
+}
+
+.headings-one {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.headings-two {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.one-comment {
+    margin: 1.5rem;
+    background-color: #FFFFA8;
+    padding: 2px;
+    font-style: italic;
+}
+
+.footer {
+    width: 20%;
+    text-align: right;
+    font-family: monospace;
+}
+
+abbr:hover {
+    text-decoration: underline;
+}
+
+.del {
+    text-decoration: line-through;
+}
+
+.one-comment span {
+    font-weight: bold;
+}
