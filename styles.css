@@ -25,3 +25,13 @@ img.circle {
     background-color: #cacaca;
     padding: 0.5rem;
   }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  p:first-letter {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+  }
