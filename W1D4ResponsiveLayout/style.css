@@ -1,0 +1,59 @@
+body{
+    overflow-x: hidden;
+}
+.navbar-header {
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.bg-header {
+    background-color: #bbd3e4;
+}
+
+.bg-green {
+    color: white;
+    background-color:rgb(39, 70, 41);
+}
+
+.bg-green .nav-link {
+    color: white;
+}
+
+.navbar-footer {
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.bg-footer {
+    background-color: #bbd3e4;
+}
+
+.colmn1 {
+    background-color: darkgrey;;
+    padding: 1rem 1rem 15rem 2rem;
+}
+
+.colmn2 {
+    background-color: lightgray;;
+    padding: 1rem 1rem 15rem 2rem;
+}
+
+.colmn3 {
+    background-color: lightslategray;
+    padding: 1rem 1rem 15rem 2rem;
+}
+
+.my-navbar{
+    padding: 1rem;
+    color: white;
+    background-color:rgb(39, 70, 41);
+}
+
+.my-navbar>a{
+    padding: 10px;
+    border-right: solid 1px black;
+    margin: 0;
+    color: white;
+}
