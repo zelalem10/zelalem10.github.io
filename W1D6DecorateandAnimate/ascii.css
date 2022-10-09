@@ -6,7 +6,6 @@
 
 #text-area{
 	font-family: monospace;
-    font-size: 12pt;
 	width: 100%;
 }
 
@@ -46,3 +45,23 @@ select{
     right:0px;
     position: fixed;
 }
+
+.tiny {
+    font-size: 7pt;
+}
+.Small {
+    font-size: 10pt; 
+}
+.medium {
+    font-size: 12pt; 
+}
+.large {
+    font-size: 16pt; 
+}
+.extra-large {
+    font-size: 24pt; 
+}
+.xxl {
+    font-size: 32pt; 
+}
+    

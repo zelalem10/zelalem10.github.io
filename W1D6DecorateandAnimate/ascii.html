@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./ascii.css" rel="stylesheet" >
+    <script src="./animations.js"></script>
+    <script src="./ascii.js" ></script>
     <title>Js Animations</title>
 </head>
 <body>
     <header>CS472: ASCII Animation Viewer)</header>
     <div class="container">
-        <textarea id="text-area" cols="80" rows="20" spellcheck="false"></textarea>
+        <textarea id="text-area" cols="80" rows="20" spellcheck="false" class="medium"></textarea>
         <fieldset>
             <legend>Play Controls:</legend>
             <button id="start">Start</button>
@@ -30,12 +32,12 @@
         <fieldset>
             <legend>Size:</legend>
             <select id="fontsize">
-                <option value="Tiny">Tiny</option>                                              
-                <option value="Small">Small</option>                        
-                <option value="Medium" selected="selected">Medium</option>                                           
-                <option value="Large">Large</option>                        
-                <option value="Extra Large">Extra Large</option>                       
-                <option value="XXL">XXL</option>                        
+                <option value="tiny">Tiny</option>                                              
+                <option value="small">Small</option>                        
+                <option value="medium" selected="selected">Medium</option>                                           
+                <option value="large">Large</option>                        
+                <option value="extra Large">Extra Large</option>                       
+                <option value="xxl">XXL</option>                        
             </select>
         </fieldset>
         <fieldset>
@@ -61,4 +63,5 @@
 
 
 </body>
+
 </html>
