@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+
+    <script>
+        // write your code for the function earliestSpace() here
+        // remember it has to take 3 strings, not an array!
+    </script>
+    <script>
+        describe("sum", function () {
+            it("takes a list of number, and returns the sum",
+                function () {
+                    assert.equal(15, sum([1,2,3,4,5]));
+                });
+        });
+
+        describe("multiply",  () => {
+            it("takes a list of number, and returns their product",
+                 () => assert.deepEqual(48, multiply([1,2,3,4,2])))
+        })
+
+        describe("reverse", () => {
+            it("takes string and return reversed string", 
+                () => assert.deepEqual("zelalem", reverse("melalez")))
+        })
+
+        describe("filterLongWords", () => {
+            it("takes an array of words and an integer i and returns the array of words that are longer than i.", 
+                () => assert.deepEqual(['abcd', 'longest one'], filterLongWords(["a", "ab", "abc", "abcd", "k", "longest one"], 3)))
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="mocha">test page</div>
+    <script>
+        mocha.run();
+
+    </script>
+</body>
+<script src="./index.js"> </script>
+
+</html>

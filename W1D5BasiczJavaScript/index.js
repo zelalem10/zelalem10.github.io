@@ -21,16 +21,16 @@ const sum = (listOfNumbers) => {
 }
 
 const multiply = (listOfNumbers) => {
+  
     let multiply = 1;
     listOfNumbers.forEach(num => multiply = multiply * num)
     return multiply;
 }
 
 const reverse = (word) => {
-
+  
 let splitWord = word.split('');
  const reversed = splitWord.reverse()
-
 return reversed.join('')
 
 }
@@ -46,14 +46,14 @@ const findLongestWord = (listOfWord) =>{
 }
 
 const filterLongWords = (word, length) => {
-    let listOfArray = [];
-    for(let i=0; i<word.length; i++){
-        if(word[i].length > length) {
-            listOfArray.push(word[i])
-        }
-    }
+let listOfArray =  word.filter(item => item.length > length)
+    // let listOfArray = [];
+    // for(let i=0; i<word.length; i++){
+    //     if(word[i].length > length) {
+    //         listOfArray.push(word[i])
+    //     }
+    // }
 
-    console.log(listOfArray);
     return listOfArray;
 }
 
