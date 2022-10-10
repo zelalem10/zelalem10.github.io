@@ -1,0 +1,3 @@
+const validateForm = () => {
+    alert("Submited!")
+}
