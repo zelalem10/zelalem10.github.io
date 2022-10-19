@@ -1,0 +1,10 @@
+
+.circle {
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    margin-top: 15%;
+}
+
