@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
 
   $("#start").click(function () {
 
