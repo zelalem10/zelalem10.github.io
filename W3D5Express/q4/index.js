@@ -2,6 +2,7 @@ const express = require('express');
 const path=require("path");
 const app = express();
 
+app.use('/css', express.static(path.join(__dirname, 'css')));
 app.use(express.urlencoded({extended:false}));
 
 app.get('/', (req, res) => {
@@ -37,5 +38,5 @@ app.get('/output', (req, res) => {
     name = (!name) ? "person" : name;
     res.send(`Welcome ${name} , your age is: ${age}`);
 });
-app.use('/css', express.static(path.join(__dirname, 'css')));
+
 app.listen(3000);

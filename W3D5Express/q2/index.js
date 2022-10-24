@@ -1,8 +1,7 @@
 const express= require('express');
 const app = express();
 
-app.listen(3000)
-console.log("your server is running on port 3000!!")
+
 app.use(function (req,res,next){
     console.log("mw--"+req.url)
     next();
@@ -31,3 +30,6 @@ app.post('/result',(req,res)=>{
    age=(!age)?"your age":age;
     res.end(`welcome ${name} your age is ${age}`)
 });
+
+app.listen(3000)
+console.log("your server is running on port 3000!!")
