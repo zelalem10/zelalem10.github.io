@@ -14,27 +14,16 @@ app.use(session({
 app.use(express.urlencoded({ extended: false }));
 
 
-// exports.addToCart = (req, res) => {
-
-//     let product = Product.getById(req.body.id)[0];
-
-//     Cart.add(product);
-//     let allCarItems = Cart.getAll();
-//     res.render("shoppingCart", { product: allCarItems.products, totalPrice : allCarItems.totalPrice });
-// }
-
-
-exports.addToCart = (req, res, next) => {
-    console.log(req.session)
-    if (!req.session.cart) {
-        req.session.cart = []; // put views object into session
-      }
+exports.addToCart = (req, res) => {
 
     let product = Product.getById(req.body.id)[0];
 
-    req.session.cart[req.body.id] = product;
-    let allCarItems = req.session.cart;
-    console.log(allCarItems)
-    res.render("shoppingCart", { product: allCarItems});
+    Cart.add(product);
+    let allCarItems = Cart.getAll();
+    res.render("shoppingCart", { product: allCarItems.products, totalPrice : allCarItems.totalPrice });
 }
+
+
+
+
 
