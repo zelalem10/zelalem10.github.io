@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+    </head>
+    <body>
+        <h1>Products</h1>
+        <ul>
+            <% for(let product of products){ %>
+                <li>Name:<%=product.name%></li>
+                <ul>
+                    <li>Price:<%=product.price%></li>
+                    <li>quantity:<%=product.quantity%></li>
+                    <li>
+                        <form action="/addToCart" method="POST">
+                            <input type="hidden" name="id" value="<%=product.id%>">
+                            <input type="submit" value="Add to cart">
+                        </form>
+                    </li>
+                </ul>
+            <%} %>
+        </ul>
+    </body>
+</html>

@@ -1,13 +1,13 @@
 let Product = require("../model/product");
 let Cart = require("../model/Cart");
 
+const session = require('express-session')
+
 exports.addToCart = (req, res) => {
 
-    let product = Product.getById(req.body.id);
+    let product = Product.getById(req.body.id)[0];
 
-    const tempCart = new Cart(product[0].id, product[0].name, product[0].price, product[0].quantity);
-
-    tempCart.add();
-    let allCarItems = tempCart.getAll();
-    res.render("shoppingCart", { items: allCarItems });
+    Cart.add(product);
+    let allCarItems = Cart.getAll();
+    res.render("shoppingCart", { product: allCarItems.products, totalPrice : allCarItems.totalPrice });
 }
