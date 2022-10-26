@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>Product <%= id %></title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/js/index.js"></script>
+    </head>
+
+    <body>
+        <%- include("product-details.ejs") %>
+        <form id="add-to-cart">
+            <input type="hidden" value="<%= id %>" name="id" id="product-id">
+            <div>
+                <button type="submit">Add to Cart</button>
+                <span id="cart-items-count"><%= cartCount %></span>
+            </div>
+        </form>
+        <span id="msg"></span>
+        <br/>
+    </body>
+</html>

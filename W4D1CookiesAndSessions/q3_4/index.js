@@ -39,8 +39,10 @@ app.post("/addToCart", (req, res, next) => {
     exsitingProduct.quantity += 1;
     req.session.totalPrice += exsitingProduct.price
   } else {
+    
     //not exist
     req.session.cart.quantity = 1;
+    req.session.totalPrice += product.price
     
     req.session.cart.push(product);
   }

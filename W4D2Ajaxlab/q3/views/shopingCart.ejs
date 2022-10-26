@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+ <meta charset="utf-8">
+ <title>Shopping Cart</title>
+ </head>
+
+ <body>
+    <% for (var i = 0; i < products.length; i++) { %>
+        <%- include("product-details.ejs", products[i]) %>
+        <h4>Product Quantity: <%= products[i].quantity %></h4>
+        <hr>
+        <br/>
+        <% } %>
+ </body>
+</html>
